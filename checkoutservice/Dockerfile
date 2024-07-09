@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 VOLUME /tmp
 
 # Kopiere die JAR-Datei in das Image
-ARG JAR_FILE=target/basketservice-0.0.1-SNAPSHOT.jar
+ARG JAR_FILE=target/checkoutservice-0.0.1-SNAPSHOT.jar
 COPY ${JAR_FILE} app.jar
 
 # Exponiere den Port, auf dem die Anwendung läuft
