@@ -75,4 +75,5 @@ public class CheckoutControllerTest {
                 .andExpect(status().isBadRequest())
                 .andExpect(content().string(containsString("Checkout is already completed")));
     }
+    
 }
