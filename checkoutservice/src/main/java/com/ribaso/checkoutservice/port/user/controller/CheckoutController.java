@@ -11,6 +11,7 @@ import com.ribaso.checkoutservice.port.exception.CheckoutAlreadyCompletedExcepti
 import com.ribaso.checkoutservice.port.exception.InvalidCheckoutIdException;
 
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
