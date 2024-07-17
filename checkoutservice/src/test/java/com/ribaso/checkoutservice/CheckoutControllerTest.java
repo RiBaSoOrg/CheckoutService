@@ -35,7 +35,8 @@ public class CheckoutControllerTest {
     public void initiateCheckout_ShouldReturnCheckout() throws Exception {
         Checkout checkout = new Checkout();
         checkout.setStatus("pending");
-        given(checkoutService.initiateCheckout()).willReturn(checkout);
+        String userId = "1";
+        given(checkoutService.initiateCheckout(userId)).willReturn(checkout);
 
         mockMvc.perform(MockMvcRequestBuilders.post("/api/checkout/initiate")
                 .contentType(MediaType.APPLICATION_JSON))

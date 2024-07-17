@@ -16,7 +16,7 @@ public interface CheckoutService {
      *
      * @return Das erstellte Checkout-Objekt mit Status 'pending'.
      */
-    Checkout initiateCheckout();
+    Checkout initiateCheckout(String userId);
 
     /**
      * Schließt einen Checkout-Prozess ab, indem der Status auf "completed" gesetzt wird.

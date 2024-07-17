@@ -26,8 +26,8 @@ public class CheckoutController {
 
     @PostMapping("/initiate")
     @Operation(summary = "Initiate checkout", description = "Initiates a new checkout process and returns the checkout details.")
-    public Checkout initiateCheckout() {
-        return checkoutService.initiateCheckout();
+    public Checkout initiateCheckout(@Parameter(description = "The unique identifier of the checkout to complete.") String userId) {
+        return checkoutService.initiateCheckout(userId);
     }
 
     @PostMapping("/complete/{id}")
